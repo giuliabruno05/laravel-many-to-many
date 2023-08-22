@@ -3,9 +3,18 @@
 @section('content')
 <div class="container mt-5">
     <h4 class="p-2 mb-2  text-white">PROJECT</h4>
-    <a href="{{route('project.create')}} "class="link-opacity-50">
-        CREATE A PROJECT +
-    </a>
+    <ul>
+        <li>
+            <a href="{{route('project.create')}} "class="link-opacity-50">
+                CREATE A PROJECT +
+            </a>
+        </li>
+        <li>
+            <a href="{{route('technology.create')}} "class="link-opacity-50">
+                CREATE A TECHNOLOGY +
+            </a>
+        </li>
+    </ul>
     <ul class="text-center ">
         @foreach ($projects as $project)
             <li>

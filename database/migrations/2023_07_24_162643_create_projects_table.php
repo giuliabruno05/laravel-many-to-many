@@ -20,7 +20,7 @@ return new class extends Migration
             $table -> text('description') -> nullable();
             $table -> date('start_date');
             $table -> date('end_date');
-            $table -> text('image');
+            $table -> text('image') -> nullable();
             $table->timestamps();
         });
     }
